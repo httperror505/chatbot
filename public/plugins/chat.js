@@ -60,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "I love FitChat!";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -77,6 +77,7 @@ function getResponse() {
 
 // Handles sending text via button clicks
 function buttonSendText(sampleText) {
+    
     let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 
     $("#textInput").val("");
@@ -94,7 +95,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("I love Fitchat!")
 }
 
 // Press enter to send a message
@@ -103,3 +104,7 @@ $("#textInput").keypress(function (e) {
         getResponse();
     }
 });
+
+function workout() {
+    
+}
